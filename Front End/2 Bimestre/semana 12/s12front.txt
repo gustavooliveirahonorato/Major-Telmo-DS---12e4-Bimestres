@@ -1,0 +1,12 @@
+1. Qual era o problema da aplicação?
+R: Conforme a lista de usuários crescia, o sistema começava a engasgar e perder o reendimento. O motivo era que, a cada novo cadastro, o React processava e renderizava novamente todos os nomes que já estavam salvos, em vez de focar só na novidade.
+2. O que o React.memo() ajuda a evitar?
+R: Ele impede o retrabalho em componentes funcionais. O recurso analisa as informações e, caso os dados daquele item continuem iguais, ele avisa o React que não há necessidade de reconstruir o elemento na tela.
+3. Para que serve o PureComponent?
+R: Sua função é poupar esforço em componentes baseados em classes. Ele faz uma checagem rápida entre o estado antigo e o atual, barrando novas renderizações se perceber que nenhuma informação real foi alterada.
+4. O que a biblioteca react-window faz?
+R: Ela aplica um conceito chamado virtualização. A ferramenta limita o que vai para o código da página, renderizando no navegador estritamente os nomes que cabem no campo de visão do usuário naquele instante. 
+5. Por que uma lista muito grande pode deixar uma aplicação lenta?
+R: O excesso de tags e estruturas na tela sobrecarrega o navegador. Administrar e desenhar milhares de elementos ao mesmo tempo exige um esforço enorme de hardware, esgotando a memória e o processamento do dispositivo.
+6. Depois das melhorias, o que mudou na aplicação?
+R: O projeto ficou muito mais fluido, rápido e seguro contra os travamentos. Agora, as atualizações acontecem de forma cirúrgica e o navegador trabalha folgado, lidando apenas com uma fração mínima de dados por vez.

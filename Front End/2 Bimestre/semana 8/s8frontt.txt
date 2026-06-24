@@ -1,0 +1,6 @@
+https://github.com/gustavooliveirahonorato67/semana-8-front
+
+Funcionamento da Função App
+A função App é o componente raiz que centraliza a lógica e a interface da aplicação. Pra o gerenciamento de dados, ele utiliza as constantes tasks (lista de tarefas) e input (texto digitado), junto com suas respectivas funções de atualização, setTasks e setInput.
+A dinâmica do app acontece através das funções: addTask, que cria novas tarefas; toggleComplete, que marca as tarefas como feitas; e removeTask, que exclui elas. O controle de persistência é feito pelo useEffect: um é executado ao iniciar pra carregar os dados do localStorage e o outro é disparado sempre que a lista muda para salvar as alterações.
+No return, o React renderiza os elementos na tela transformando a lógica em interface visual. A interação acontece por eventos (como por exemplo: cliques e digitação), que atualizam o estado e fazem com que o React reatualize a exibição de forma automática.

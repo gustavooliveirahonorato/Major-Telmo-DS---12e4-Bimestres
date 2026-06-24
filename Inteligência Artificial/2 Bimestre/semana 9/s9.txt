@@ -1,0 +1,8 @@
+1) Por que o Inception-V3 é uma boa referência?
+R: Porque ele é um modelo muito treinado pelo Google que serve como uma régua padrão pra comparar a qualidade de diferentes IAs de forma justa.
+
+2) Qual a diferença entre Inception Score (IS) e FID?
+R: O IS mede se a imagem é nítida e variada, enquanto o FID compara a imagem da IA com as fotos reais para ver se elas são parecidas.
+
+3) Como os limiares (IS > 5.0, FID < 50) ajudam?
+R: Eles servem como notas para garaminimas pra garantir que a IA tá criando imagens reconhecíveis e próximas da realidade, em vez de apenas borrões.

@@ -1,0 +1,11 @@
+Como a implementação de microsserviços mudou a maneira como você pensou sobre a divisão do código?
+
+R: Mudou porque eu comecei a pensar mais em individualizar e separar cada parte do que pensar em fazer tudo junto. Por exemplo, pedidos, usúarios e produtos viraram coisas independentes. Isso deixou mais organizado e mais fácil de entender.
+
+Quais desafios surgiram ao tentar refatorar o sistema para microsserviços?
+
+R: O mais difícil foi separar o que já estava junto. E também foi muito complicado fazer os serviços “conversarem” entre si e garantir que tudo continuasse funcionando certo, porque ficou MUITO mais complexo.
+
+Como os padrões de design ajudaram a estruturar melhor o código em ambas as arquiteturas?
+
+R: Eles ajudaram a deixar o código muito mais organizado e menos bagunçado. No monolítico ajudaram a controlar melhor as coisas, e nos microsserviços ajudaram na comunicação e a evitar erros. No geral, facilitou o sistema de ser mantido.

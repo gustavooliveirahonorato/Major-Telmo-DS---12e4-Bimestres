@@ -1,0 +1,1 @@
+filtra os resultados que ja foram processados pelo group by.

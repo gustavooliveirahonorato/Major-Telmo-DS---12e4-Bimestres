@@ -1,0 +1,29 @@
+Processo Direto/Inverso: O processo direto degrada a imagem original colocando ruído gradualmente até tornar ela péssima ou até irreconhecpivel. O processo inverso reconstrói a imagem, revertendo cada etapa dessa degradação para recuperar a clareza original.
+Tarefa da IA: A função da IA é atuar como um previsor de ruído. Em cada etapa, ela identifica a "sujeira" adicionada naquele ponto específico e remove ela, tornando o resultado cada vez mais nítido e definido.
+Step Scheduler: É o planejamento estratégico que determina a intensidade da remoção de ruído em cada fase. Um plano inadequado compromete a eficiência e a qualidade, assim resultando em imagens mais demoradas ou visualmente distorcidas.
+                                                                       Perguntas de consolidação (Aula 2)
+
+1) O que é o beta schedule e qual o seu papel no processo de difusão?
+
+R: É o "cronograma" que define quanto ruído entra em cada etapa. Ele controla a transição da imagem pro caos.
+
+ 2) Qual a principal diferença visual e prática entre um beta
+schedule linear e um de cosseno?
+
+R: O linear é brusco e apaga os detalhes muito rápido e o de cosseno é mais suave, ele mantém a estrutura da imagem por mais tempo e melhora a qualidade final.
+
+3) Por que a estratégia de agendamento de ruído é importante? Como ela
+afeta o aprendizado da IA?
+
+R: Ela ajusta o nível de dificuldade do aprendizado. Um bom agendamento permite que a IA aprenda desde as formas globais até os mínimos detalhes com eficiência. 
+
+                                                                                              Aula 3
+
+1) Qual é a principal função da rede UNet no processo de difusão?
+R: A função dela é identificar e prever o ruído que foi adicionado à imagem para conseguir remover ele passo a passo, reconstruindo a imagem final.
+
+2) Explique a relação entre a UNet e o denoiser. Um poderia existir sem o outro nesse contexto?
+R: A UNet é o motor que faz o trabalho de denoiser (o redutor de ruído). Nesse contexto, eles são a mesma coisa: a UNet funciona tipo como o filtro que limpa a imagem. Sem a UNet, o processo de difusão não teria a inteligência necessária para saber o que limpar.
+
+3) Se você quisesse gerar uma imagem muito criativa e artística, que pode não ser 100% fiel ao seu prompt, você usaria um valor de guidance scale alto ou baixo? Por quê?
+R: Usaria um valor baixo, com issso iria me dar muito mais liberdade para a inteligência artificial "viajar" e ser criativa, enquanto valores altos iam forçar ela a seguir o texto de forma muito rígida e literal.
